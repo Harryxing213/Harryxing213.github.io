@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hanyang Xing — Columbia University. A portfolio of projects in robotics, machine perception, radar sensing and embedded vision.">
+  <meta name="theme-color" content="#edf2fa">
+  <meta property="og:title" content="Hanyang Xing | Robotics & Perception">
+  <meta property="og:description" content="Engineering projects, current research and technical skills.">
+  <meta property="og:type" content="website">
+  <title>Hanyang Xing | Robotics & Perception</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Hanyang Xing<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work" data-en="Projects" data-zh="项目">Projects</a>
+        <a href="#ongoing" data-en="Current work" data-zh="当前工作">Current work</a>
+        <a href="#skills" data-en="Skills" data-zh="技术">Skills</a>
+        <a href="#about" data-en="About" data-zh="关于">About</a>
+      </nav>
+      <button id="language-toggle" type="button" aria-label="切换到中文">中文</button>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <p class="hero-kicker" data-en="Electrical Engineering · Columbia University" data-zh="电子工程 · 哥伦比亚大学">Electrical Engineering · Columbia University</p>
+      <h1 id="hero-title"><span data-en="Robotics, perception" data-zh="机器人、感知，">Robotics, perception</span><br class="mobile-break"><span class="title-accent" data-en=" & learning." data-zh="以及学习。"> & learning.</span></h1>
+      <p class="hero-description" data-en="I'm Hanyang, an M.S. student at Columbia University. My work spans radar point clouds, embedded computer vision, and bringing learning algorithms into working systems." data-zh="我是 Hanyang，目前在哥伦比亚大学攻读硕士。我的工作涵盖雷达点云、嵌入式计算机视觉，以及将学习算法转化为可运行的系统。">I'm Hanyang, an M.S. student at Columbia University. My work spans radar point clouds, embedded computer vision, and bringing learning algorithms into working systems.</p>
+      <div class="hero-links">
+        <a class="button button-primary" href="https://github.com/Harryxing213" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/hanyangxing/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a class="quiet-link" href="resume.html" target="_blank" rel="noopener" data-en="View CV" data-zh="查看简历">View CV</a>
+      </div>
+      <p class="availability" data-en="Seeking Summer 2027 internships in robotics and perception." data-zh="寻找 2027 年暑期机器人与感知方向实习。">Seeking Summer 2027 internships in robotics and perception.</p>
+    </section>
+
+    <section id="work" class="content-section" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title" data-en="Selected projects" data-zh="项目精选">Selected projects</h2><p data-en="Public code and experiment records" data-zh="公开代码与实验记录">Public code and experiment records</p></div>
+      <div class="project-grid">
+        <article class="project-card" id="edge-vision">
+          <p class="card-category" data-en="Computer vision / Edge AI" data-zh="计算机视觉 / 边缘 AI">Computer vision / Edge AI</p>
+          <h3 data-en="License Plate Recognition on Edge Devices" data-zh="车牌识别与边缘设备部署">License Plate Recognition on Edge Devices</h3>
+          <p class="card-description" data-en="Built YOLOv8 detection and a CNN–TCN recognizer, with ONNX export and INT8 deployment on the RV1106 camera platform." data-zh="开发 YOLOv8 检测模块与 CNN–TCN 识别器，完成 ONNX 导出和 RV1106 摄像头平台的 INT8 部署。">Built YOLOv8 detection and a CNN–TCN recognizer, with ONNX export and INT8 deployment on the RV1106 camera platform.</p>
+          <p class="card-technologies">PyTorch · YOLOv8 · ONNX · RKNN</p>
+          <div class="card-footer"><a class="github-link" href="https://github.com/Harryxing213/License-Plate-Recognition-with-Edge-Model-Deployment" target="_blank" rel="noopener"><span data-en="View on GitHub" data-zh="查看 GitHub">View on GitHub</span><span aria-hidden="true">↗</span></a><a class="result-link" href="assets/detection-results.png" target="_blank" rel="noopener" data-en="Training results" data-zh="训练结果">Training results</a></div>
+        </article>
+        <article class="project-card" id="radar-perception">
+          <p class="card-category" data-en="Radar sensing / Point clouds" data-zh="雷达感知 / 点云">Radar sensing / Point clouds</p>
+          <h3 data-en="Indoor Fall Detection with mmWave Radar" data-zh="基于毫米波雷达的室内跌倒检测">Indoor Fall Detection with mmWave Radar</h3>
+          <p class="card-description" data-en="Developed a PointNet/PointNet++ fall-detection pipeline with MATLAB preprocessing, temporal point-cloud datasets and experimental multi-person tracking." data-zh="构建 PointNet/PointNet++ 跌倒检测流程，涵盖 MATLAB 预处理、时序点云数据集与实验性多人轨迹分析。">Developed a PointNet/PointNet++ fall-detection pipeline with MATLAB preprocessing, temporal point-cloud datasets and experimental multi-person tracking.</p>
+          <p class="card-technologies">PointNet++ · PyTorch · MATLAB</p>
+          <div class="card-footer"><a class="github-link" href="https://github.com/Harryxing213/Indoor-Fall-Detection-based-on-Millimeter-Wave-Radar" target="_blank" rel="noopener"><span data-en="View on GitHub" data-zh="查看 GitHub">View on GitHub</span><span aria-hidden="true">↗</span></a><a class="result-link" href="assets/radar-comparison.png" target="_blank" rel="noopener" data-en="Model comparison" data-zh="模型对比">Model comparison</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ongoing" class="content-section" aria-labelledby="ongoing-title">
+      <div class="section-heading"><h2 id="ongoing-title" data-en="Currently working on" data-zh="正在进行">Currently working on</h2><p data-en="Research in progress" data-zh="持续探索中的研究">Research in progress</p></div>
+      <div class="project-grid ongoing-grid">
+        <article class="project-card research-card"><p class="card-category" data-en="Robotics / Measurement uncertainty" data-zh="机器人 / 测量不确定性">Robotics / Measurement uncertainty</p><h3 data-en="Measurement Variance in ROS 2 & Gazebo" data-zh="ROS 2 与 Gazebo 中的测量方差调整">Measurement Variance in ROS 2 & Gazebo</h3><p class="card-description" data-en="Developing algorithms to adjust the variance assigned to different measurements, with implementation in ROS 2 and Python." data-zh="研究调整不同测量量方差的算法，在 ROS 2 与 Python 上开展实现工作。">Developing algorithms to adjust the variance assigned to different measurements, with implementation in ROS 2 and Python.</p><div class="research-footer"><span>ROS 2 · Gazebo · Python</span><span class="research-status" data-en="In progress" data-zh="进行中">In progress</span></div></article>
+        <article class="project-card research-card"><p class="card-category" data-en="Reinforcement learning / Deployment" data-zh="强化学习 / 实际部署">Reinforcement learning / Deployment</p><h3 data-en="Reinforcement Learning on Hardware" data-zh="强化学习的硬件部署">Reinforcement Learning on Hardware</h3><p class="card-description" data-en="Investigating the accuracy of reinforcement learning policies deployed on hardware, with ongoing work in ROS 2 and Python." data-zh="研究强化学习策略部署到硬件后的精度问题，目前在 ROS 2 与 Python 上开展工作。">Investigating the accuracy of reinforcement learning policies deployed on hardware, with ongoing work in ROS 2 and Python.</p><div class="research-footer"><span>RL · ROS 2 · Python</span><span class="research-status" data-en="In progress" data-zh="进行中">In progress</span></div></article>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section skills-section" aria-labelledby="skills-title">
+      <div class="section-heading"><h2 id="skills-title" data-en="Technical skills" data-zh="技术能力">Technical skills</h2><p data-en="Tools I use across my projects" data-zh="项目中使用的技术与工具">Tools I use across my projects</p></div>
+      <div class="skills-grid">
+        <div class="skill-group"><h3 data-en="Programming" data-zh="编程语言">Programming</h3><p>Python<br>C / C++<br>MATLAB</p></div>
+        <div class="skill-group"><h3 data-en="Perception & learning" data-zh="感知与学习">Perception & learning</h3><p>PyTorch · OpenCV<br>PointNet / PointNet++<br>YOLOv8</p></div>
+        <div class="skill-group"><h3 data-en="Robotics & deployment" data-zh="机器人与部署">Robotics & deployment</h3><p>ROS 2 · Gazebo<br>ONNX · RKNN<br>INT8 quantization</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section about-section" aria-labelledby="about-title">
+      <div class="section-heading"><h2 id="about-title" data-en="A little about me" data-zh="关于我">A little about me</h2><a class="quiet-link" href="resume.html" target="_blank" rel="noopener" data-en="Full CV" data-zh="完整简历">Full CV</a></div>
+      <div class="about-grid"><div><p data-en="I'm pursuing an M.S. in Electrical Engineering at Columbia University, with an expected graduation in December 2027. I previously completed dual bachelor's degrees at UESTC and the University of Glasgow." data-zh="我目前在哥伦比亚大学攻读电子工程硕士，预计于 2027 年 12 月毕业。本科在电子科技大学与格拉斯哥大学完成双学位项目。">I'm pursuing an M.S. in Electrical Engineering at Columbia University, with an expected graduation in December 2027. I previously completed dual bachelor's degrees at UESTC and the University of Glasgow.</p><p data-en="Earlier work includes an indoor UAV vision module using OpenCV, ROS 2 and UART, and radar-based activity monitoring for elderly people living alone." data-zh="此前的工作还包括基于 OpenCV、ROS 2 与 UART 的室内无人机视觉模块，以及面向独居老人的雷达行为监测。">Earlier work includes an indoor UAV vision module using OpenCV, ROS 2 and UART, and radar-based activity monitoring for elderly people living alone.</p></div><div class="contact-block"><span data-en="Get in touch" data-zh="联系我">Get in touch</span><a class="email-link" href="mailto:hx2446@columbia.edu">hx2446@columbia.edu</a><div><a href="https://www.linkedin.com/in/hanyangxing/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/Harryxing213" target="_blank" rel="noopener">GitHub ↗</a></div></div></div>
+    </section>
+    <footer class="site-footer"><span>© <span id="year">2026</span> Hanyang Xing</span><a href="#top" data-en="Back to top ↑" data-zh="回到顶部 ↑">Back to top ↑</a></footer>
+  </main>
+</body>
+</html>
